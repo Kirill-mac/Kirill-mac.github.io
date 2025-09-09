@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Урок 5. Тестирование браузерных пушей</title>
-	
-    <script src="https://pxl.demo.altcraft.com/ak_container.js?id=Mzc4fDM=" ></script>
 </head>
 <body>
-    
-       <p>Урок 5. Тестирование браузерных пушей</p>
-<button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
 
-// ..Основная часть кода..
+        
+<button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
 
 <script>
 	document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
 	try {
-		const akPush = new AKPush();
-		akPush.initSubscription() // ..показать форму подписки
+		var akPush = new AKPush();
+		akPush.initSubscription() // Покажет форму для подписки
 		}
 	catch (e) {
-		console.log(e); // ..или записать ошибку в консоль браузера
+		console.log(e); // В случае ошибки выведет сообщение в консоль
 		}
 	});
 </script>
 
 
+    <p>Урок 5. Тестирование браузерных пушей</p>
 
-        
-
-	
 </body>
 </html>
